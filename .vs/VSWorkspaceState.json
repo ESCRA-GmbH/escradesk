@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\flutter",
+    "\\flutter\\lib",
+    "\\flutter\\lib\\desktop",
+    "\\flutter\\lib\\desktop\\pages",
+    "\\flutter\\lib\\desktop\\screen",
+    "\\flutter\\lib\\desktop\\widgets",
+    "\\src"
+  ],
+  "SelectedNode": "\\flutter\\lib\\desktop\\pages\\desktop_setting_page.dart",
+  "PreviewInSolutionExplorer": false
+}

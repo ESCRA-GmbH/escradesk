@@ -1,0 +1,3 @@
+simple configuration: 
+- in set_default_license, uncomment hardcoded() then change key and server there. 
+- if you want to make it from toml file, prepare the toml file accordingly, with the names in the function. Then comment hardcoded(), uncomment toml() in set_default_license.

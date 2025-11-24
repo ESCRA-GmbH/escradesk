@@ -1,0 +1,7 @@
+sending videos: The videos are send, and then their name is changed. The selection of videos to send it being done by checking a directory. It could be the case that the users selects a different place. And the app sends not related files. Another solution would be adding a custom data field to the video file, e.g. escradesk_send. Where the app would check it and then if there is such a field, then sends it. 
+
+
+different servers: now we have 2 custom servers, internal-external. It can be in a way that user can add custom servers and give names: e.g. Kaiserslauter server: 11.111.11.1, Koblenz server: 22.2.22.2.2.
+
+
+simple structure: we are not using most of the other features of the project. One can clean the code for our company usage. But this might effect the merges can be done later. 

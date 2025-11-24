@@ -1,0 +1,3 @@
+silent install : running the exe with argument "--silent-install" 
+import config: running the exe with argument "--import-config"
+silent install and remove user data: not actually implemented... we can do --uninstall-with-data and then --silent install 

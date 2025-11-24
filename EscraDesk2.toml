@@ -1,0 +1,179 @@
+### This is the configuration file of the application.
+
+### It contains the configurations of the running application.
+
+### Namely Application and Server Properties, display features and so on.
+
+### One can consider this file as a example documentation file for the configurations.
+
+
+
+# Rendezvous server is created at the beginning with the default value
+
+# And cannot change during the program.
+
+# That does not mean we cannot change the connected server.
+
+# This is just the first value.
+
+rendezvous_server = '80.158.57.145:21116'
+
+nat_type = 0
+
+serial = 0
+
+
+
+# Here we have the actual options as mentioned above.
+
+[options]
+
+ 
+
+##
+
+extern-rendezvous-server = '80.158.57.145:21116'
+
+extern-relay-server = '80.158.57.145:21117'
+
+extern-key = "BHkuWw9hAjOqxY5972BoHLuck2/0R69zfmYy4kbwoGs="
+
+## we use the extern key at the beginning 
+key = "BHkuWw9hAjOqxY5972BoHLuck2/0R69zfmYy4kbwoGs="
+
+## we need to indicate that we use a changed config
+config-changed = 'Y'
+
+
+
+
+
+intern-rendezvous-server = 'desk.escra.de:443'
+
+intern-relay-server = 'desk.escra.de:80'
+
+intern-key = "ABSCASJDKASDJASJKDLASKDAS:DLKASLK"
+
+
+
+custom-rendezvous-server = '80.158.57.145:21116'
+
+relay-server = '80.158.57.145:21117'
+
+
+
+
+
+# If the two options above is false, then
+
+# You can customize the settings page tabs as you want.
+
+# The name of the property is straightforward.
+
+# Which tab it is can be understood.
+
+allTabs = 'false'
+
+defaultTabs = 'false'
+
+optionNetwork = 'true'
+
+whitelist = ''
+
+optionDisplay = 'true'
+
+optionSecurity = 'true'
+
+optionDiscoverView = 'true'
+
+optionAllViews = 'false'
+
+optionAbout = 'true'
+
+optionAccount = 'false'
+
+
+
+optionRecentPeersView = 'true'
+
+optionFavoritePeersView = 'true'
+
+optionDiscoverView = 'true'
+
+optionAddressBookView = 'true'
+
+optionMyGroupView = 'true'
+
+optionAllViews = 'true'
+
+#optionDefaultViews 'true' # It gives an error here when we include this
+
+
+
+## Application running configurations ##
+
+
+
+# Please check changeWhiteList function...
+
+whitelist = ''
+
+
+
+# Is portable property to change the widget at the left side.
+
+# For more info, please check buildHelpCards() function.
+
+isPortable = 'false'
+
+
+
+## Mostly Not configured by the users properties ##
+
+# audio-input
+
+# video-save-directory
+
+# access-mode
+
+# direct-server
+
+# direct-access-port
+
+# allow-remote-config-modification
+
+# enable-abr
+
+# enable-lan-discovery
+
+# enable-record-session
+
+# allow-auto-record-incoming
+
+# local-ip-address
+
+# temporary-password-length
+
+# enable-audio
+
+# enable-file-transfer
+
+# verification-method
+
+# approve-mode
+
+# stop-service
+
+force-always-relay = 'true'
+
+show-copy-paste-option-in-control-panel = 'Y'
+show-clipboard-option-in-control-panel = 'N'
+
+show-os-auth-option-in-toolbar = 'Y'
+show-paste-option-in-toolbar = 'N'
+show-transfer-option-in-toolbar = 'Y'
+allow-auto-record-incoming = 'N'
+
+
+
+

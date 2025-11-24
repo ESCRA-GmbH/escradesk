@@ -1,0 +1,32 @@
+04.07.2024:
+We once have the default server configurations in license.rs,
+there was a function repeatedly called, we were trying to set the default
+server with this function. Now I have deleted that setting function and try to set the server
+from somewhere else. 
+
+
+
+Dez 5 2023:
+we did fileTransfer first then sprachanruf
+Should test sprachanruf…
+Accept and elevate is gone now.
+Different buttons are removed. // Should test though..
+options are removed data transfer, tcp rdp
+translate mode option is removed.
+Stumschalten und Datenschutzmodus are removed.
+// All the changes except file transfer in the home page should be tested now.
+
+12 Nov 2023: We have deleted the options from install page (run-without-install, remove-user-)
+
+info: main.cpp
+// connection manager hide icon from taskbar
+  bool is_cm_page = false;
+  auto cmParam = std::string("--cm");
+
+in EscraDesk_local
+[options]
+theme = 'dark'
+
+in EscraDesk_default.toml
+[options]
+view_style = 'adaptive'

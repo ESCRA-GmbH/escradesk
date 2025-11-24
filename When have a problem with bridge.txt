@@ -1,0 +1,12 @@
+Hello,
+from terminal on vscode
+cargo install flutter_rust_bridge_codegen --version "1.75.3" --features "uuid"
+flutter pub get
+flutter_rust_bridge_codegen --rust-input ./src/flutter_ffi.rs --dart-output ./flutter/lib/generated_bridge.dart
+
+
+check the version meticulously, check the cargo files of dependency too. 
+
+
+vcpkg should also be installed for the clean system. 
+Then https://www.reddit.com/r/rustdesk/comments/17pok5c/file_not_found_errors_when_trying_to_build/

@@ -1,0 +1,143 @@
+### This is the configuration file of the application.
+### It contains the configurations of the running application.
+### Namely Application and Server Properties, display features and so on.
+### One can consider this file as a example documentation file for the configurations.
+
+# Rendezvous server is created at the beginning with the default value
+# And cannot change during the program.
+# That does not mean we cannot change the connected server.
+# This is just the first value.
+rendezvous_server = '80.158.57.145:21116'
+nat_type = 0
+serial = 0
+
+# Here we have the actual options as mentioned above.
+[options]
+
+## Connection Information ##
+# Normally we have two servers as internal and external server.
+# here is the external-server's properties.
+# This one is overwritten; no need to write it on the toml file, also 
+# writing will cause problems and bugs.
+external-id-server = '80.158.57.145:21116'
+external-relay-server = '80.158.57.145:21117'
+external-api-server = '80.158.57.145:21117'
+external-key = "BHkuWw9hAjOqxY5972BoHLuck2/0R69zfmYy4kbwoGs="
+
+# here is the internal-server's properties.
+internal-id-server = 'desk.escra.de:443'
+internal-relay-server = 'desk.escra.de:80'
+internal-api-server = 'desk.escra.de:80'
+intern-key = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw="
+
+
+# As we have two different server, we have also the actual server
+# that we have currently using.
+custom-rendezvous-server = '80.158.57.145:21116'
+relay-server = '80.158.57.145:21117'
+
+
+## Settings Page Display Related Properties ##
+
+# We have different tabs in the settings page.
+# We are configuring that with the properties below.
+# If those are not given, it does the default behavior defined in the code.
+
+# to see all the tabs you should make allTabs 'true'
+# allTabs has the precedence of this properties.
+allTabs = 'true'
+
+# to see default tabs - which is a hardcoded combination of
+# tabs in the settings page
+# If allTabs is false then you can set this one true.
+defaultTabs = 'true'
+
+# If the two options above is false, then
+# You can customize the settings page tabs as you want.
+# The name of the property is straightforward.
+# Which tab it is can be understood.
+optionSecurity = 'true'
+optionNetwork = 'true'
+optionDisplay = 'true'
+optionPlugin = 'true'
+optionAccount = 'true'
+optionAbout = 'true'
+
+# For the options below, if it is given as 'Y' 
+# it will do the straightforward thing that name suggests.
+# it can be left empty. Then it will do the default, namely the opposite of the name suggests.
+
+## Setting Tabs
+hide-general-setting-tab = 'Y'
+hide-safety-setting-tab = 'Y'
+hide-network-setting-tab = 'Y'
+hide-display-setting-tab = 'Y'
+hide-about-setting-tab = 'Y'
+show-plugin-setting-tab = 'Y'
+show-account-setting-tab = 'Y'
+
+
+## Peer page
+hide-recent-peers-view = 'Y'
+hide-favorite-peers-view = 'Y'
+hide-discover-peers-view = 'Y'
+show-address-book-peers-view = 'Y'
+show-my-group-peers-view = 'Y'
+
+
+show-remote-cursor-in-toolbar-toggle = 'Y'
+show-zoom-cursor-in-toolbar-toggle = 'Y'
+show-mute-in-toolbar-toggle = 'Y'
+show-copy-paste-in-toolbar-toggle = 'Y'
+show-privacy-mode-in-toolbar-toggle = 'Y'
+
+
+
+# In the connectionPage at the home page,
+# We have different little icons around at the left side of the panel.
+# We can also configure that but it is not fully implmented yet.
+# Namely it does simply not work...
+# The naming is pretty straightforward.
+# In order to config manually, optionAllViews and optionDefaultViews should be 'false'
+# otherwise it will be getting the default config from the source code.
+# The choice should be explicit namely 'true' or 'false'
+optionFavoritePeersView = 'true'
+optionDiscoverView = 'true'
+optionAddressBookView = 'true'
+optionMyGroupView = 'true'
+optionAllViews = 'true'
+optionDefaultViews = 'true'
+
+
+
+
+
+
+## Application running configurations ##
+
+# Please check changeWhiteList function...
+whitelist = ''
+
+
+## Mostly Not configured by the users properties ##
+# audio-input
+# video-save-directory
+# access-mode
+# direct-server
+# direct-access-port
+# allow-remote-config-modification
+# enable-abr
+# enable-lan-discovery
+# enable-record-session
+# allow-auto-record-incoming
+# local-ip-address
+# temporary-password-length
+# enable-audio
+# enable-file-transfer
+# verification-method
+# approve-mode
+# stop-service
+
+local-ip-addr = '10.0.2.15'
+
+
